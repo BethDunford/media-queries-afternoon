@@ -1,0 +1,86 @@
+header {
+    display: flex ;
+    justify-content: space-around;
+    height: 60px;
+    /* border: dashed red; */
+    width: 100vw;
+    position: fixed;
+    /* margin-left: -45vw; */
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.drop-down-menu, .drop-down-menu-open, .drop-down-menu-closed {
+    width: 100vw;
+    background: blue;
+    position: absolute;
+    top: 80px;
+    left: 0px;
+    z-index: -1;
+}
+
+.drop-down-menu {
+    display: none;
+}
+
+.drop-down-menu-open {
+    animation: openMenu .5s forwards linear;
+}
+
+.drop-down-menu-closed {
+    animation: closeMenu .5s forwards linear;
+}
+
+@keyframes openMenu {
+    from{
+        top: -1000px;
+    }
+    to {
+        top: 80px;
+    
+    }
+}
+
+@keyframes closeMenu {
+    0% {
+        top: 80px;
+    }
+    100% {
+        top: -1000px;
+    }
+}
+
+header h3{
+    color: #FED136;
+    font-family: 'Kaushan Script', cursive;
+}
+
+#site-nav{
+    display: flex;
+}
+
+#site-nav li {
+    list-style: none;
+    margin-left: 10px;
+    font-size: 25px;
+    color: white;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+    display: none;
+}
+
+@media (max-width: 700px) {
+    img {
+        display: block;
+    }
+
+    .menu-text {
+        display: none;
+    }
+}

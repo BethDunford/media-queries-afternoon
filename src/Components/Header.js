@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.css';
-import hamburger from '../menu-icon.png';
+// import hamburger from '../menu-icon.png';
 
 export default class Header extends React.Component {
     constructor() {
@@ -20,7 +20,7 @@ export default class Header extends React.Component {
 
     render() {
         return (
-            <header>
+            <header className="header">
                 <nav>
                     <h3>Start Bootstrap</h3>
                     <ul id='site-nav'>
@@ -32,7 +32,7 @@ export default class Header extends React.Component {
                         <li>
                             <img
                                 onClick={this.handleClick}
-                                src={hamburger}
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Menu%2C_Web_Fundamentals_%28White%29.svg/1280px-Menu%2C_Web_Fundamentals_%28White%29.svg.png"
                                 alt="Menu icon"
                             />
                         </li>
@@ -45,9 +45,6 @@ export default class Header extends React.Component {
                         </ul>
                     </ul>
                 </nav>
-                <h2>Welcome To Our Studio</h2>
-                <h1>IT'S NICE TO MEET YOU</h1>
-                <button>TELL ME MORE</button>
             </header>
         )
     }
