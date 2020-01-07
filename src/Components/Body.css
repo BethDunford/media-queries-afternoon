@@ -14,11 +14,18 @@
 .hero-image h2 {
     font-family: 'Courgette', cursive;
     color: white;
+    font-size: 40px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .hero-image h1 {
     font-family: 'Montserrat', san-serif;
     color: white;
+    font-weight: bolder;
+    font-size: 100px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .hero-image button {
@@ -28,7 +35,9 @@
     color: white;
     font-family: 'Montserrat', san-serif;
     text-align: center;
-    font-size: 18px;
+    font-size: 25px;
     width: 225px;
     height: 70px;
+    font-weight: bolder;
+    margin-top: 25px;
 }

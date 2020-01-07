@@ -1,11 +1,11 @@
 header {
     display: flex ;
     justify-content: space-around;
+    align-items: center;
     height: 60px;
-    /* border: dashed red; */
     width: 100vw;
     position: fixed;
-    /* margin-left: -45vw; */
+    justify-content: space-around;
 }
 
 nav {
@@ -15,11 +15,15 @@ nav {
 
 .drop-down-menu, .drop-down-menu-open, .drop-down-menu-closed {
     width: 100vw;
-    background: blue;
+    height: 300px;
+    background: #212529;
     position: absolute;
-    top: 80px;
+    top: 60px;
     left: 0px;
     z-index: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .drop-down-menu {
@@ -39,14 +43,14 @@ nav {
         top: -1000px;
     }
     to {
-        top: 80px;
+        top: 60px;
     
     }
 }
 
 @keyframes closeMenu {
     0% {
-        top: 80px;
+        top: 60px;
     }
     100% {
         top: -1000px;
@@ -56,31 +60,64 @@ nav {
 header h3{
     color: #FED136;
     font-family: 'Kaushan Script', cursive;
+    margin-left: 30px;
+    font-size: 28px;
+    float: left;
 }
 
 #site-nav{
     display: flex;
+    justify-content: center;
+    align-items: center; 
+    /* float: right;    */
+    
 }
 
 #site-nav li {
+    float: right;
     list-style: none;
-    margin-left: 10px;
-    font-size: 25px;
+    margin-right: 25px;
+    font-size: 14.4px;
+    color: white;
+    font-family: 'Montserrat', san-serif;
+    font-weight: bold;
+    float: right;
+}
+
+#site-nav li:hover {
+    color: #FED136;
+}
+
+header nav ul button {
+    width: 79px;
+    height: 38px;
+    display: none;
+    background: #FED136;
     color: white;
 }
 
-img {
-    width: 50px;
-    height: 50px;
-    display: none;
-}
+@media (max-width: 990px) {
+    header nav ul button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        outline: none;
+    }
 
-@media (max-width: 700px) {
-    img {
-        display: block;
+    fa fa-bars {
+        font-size: 18px;
+        color: white;
+        margin-left: 30px;
     }
 
     .menu-text {
         display: none;
+    }
+}
+
+@media (max-width: 990px){
+    header{
+    background-color: #212529;
     }
 }
